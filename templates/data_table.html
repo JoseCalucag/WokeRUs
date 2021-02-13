@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Database Dashboard</title>
+</head>
+<body>
+<h1>How risky is your Loan</h1>
+<table class ='table table-striped'style="width: 70%">
+    <thead>
+      <th scope="col">Credit_Score</th>
+    </thead>
+    <thead>
+            {% for item in c %}
+        <tr>
+            <th scope="row"> {{ item.Loan_Amount }} </th>
+        </tr>
+            {% endfor %}
+    </thead>
+  </table>
+<p>My first paragraph.</p>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+   <!DOCTYPE html>
+<html>
+    <head>
+        <title>Database Dashboard</title>
+        <!--<link href = "/style.css" rel="stylesheet" />-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/resources/css/employee.css">
+
+</head>
+<body>
+        <script>alert(typeof(data))</script>
+        <script>alert(data)</script>
+        <div id="header" style="text-align: center">
+                <h1 class="align-right">How Risky Is Your Loan??</h1>
+        </div>
+        <div>
+            <div class="container">
+                    <br>
+                    <br>
+                    <table class="table">
+                                <!--get specific/index value from template structure data-->
+                               <!----<span style="color: red">[[(index . 0).ErrorMessage]]</span>-->
+                               <thead style ="height:100px!important">
+                                    <tr class ="table-primary"> 
+                                        <th>ID</th>
+                                        <th>Loan_Amount</th>
+                                        <th>Debt_income_ratio</th>
+                                        <th>Emp_Length</th>
+                                        <th>Credit_Score</th>
+                                        <th>Loan_Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    [[ range $c, $n := . ]]
+                                        <tr>
+                                        <td>[[ ._id ]]</td>
+                                        <td>[[ .Loan_Amount ]]</td>
+                                        <td>[[ .Debt_income_ratio ]]</td>
+                                        <td>[[ .Emp_Length ]]</td>
+                                        <td>[[ .Credit_Score ]]</td>
+                                        <td>[[ .Loan_Status ]]</td>
+                                        </tr>
+                                    [[end]]														
+                                </tbody>
+                            </table><br>
+                            <!-- <script>
+                                    var errMsg = '[[(index . 0).ErrorMessage]]';
+                                    if(errMsg != '')
+                                        alert(errMsg);
+                                </script> -->
+</div>
+
+    </div>
+    
+    </body>
+</html>

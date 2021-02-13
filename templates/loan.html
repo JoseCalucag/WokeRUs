@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>Investment Risk</title>
+   <link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="bg-dark">
+
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">See if you are accepted to a loan</a>
+        </nav>
+
+    </div>
+
+    <div class="jumbotron text-center">
+        <h1 class = 'display-3'>Loan Risk</h1>
+      </div>
+
+      <div>
+        <img class = "logo" src="../static/images/WokeRUsLogo.png" alt="logo">
+        </div>
+        <div id = "container">
+          <form methods="POST"></form> 
+            <h6 style='color:white;'> Credit Score </h6> <input id="credit_score" class="input-styling" type="number">
+            <h6 style='color:white;'> Employment Length</h6> <input id="emp_lenth" class="input-styling" type="number">
+            <h6 style='color:white;'> DTI Ratio </h6> <input id="dti" class="input-styling" type="number">
+            <h6 style='color:white;'> Loan Amount </h6> <input id="loan_amount" class="input-styling" type="number">
+            
+            <button id = "Submit"> Submit </button>
+        </form>
+        <!-- <button id = "rejected" onclick="RejectedFn()"> REJECTED </button> -->
+      </div>
+</html>
