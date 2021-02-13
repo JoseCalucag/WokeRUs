@@ -1,0 +1,101 @@
+html {
+    background-color:dimgray;
+    height: 100%;
+}
+
+#container {
+    height: 325px;
+    width: 450px;
+    background-color: darkgreen;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas: 
+    ". credit_score"
+    ". emp_length"
+    ". dti"
+    ". loan_amount"
+    ". accepted"
+    ". rejected"
+    ;
+    margin: auto;
+    border: 5px solid black;
+    padding: 25px;
+}
+
+#credit_score {
+    grid-area: credit_score
+    color: 'white'
+}
+#emp_lenth {
+    grid-area: emp_length
+}
+#dti {
+    grid-area: dti
+}
+#loan_amount {
+   grid-area: loan_amount
+}
+
+#accepted {
+    grid-area: accepted;
+    height: 25px;
+    width: auto;
+    align-content: center;
+}
+
+#rejected {
+    grid-area: rejected;
+    height: 25px;
+    width: auto;
+}
+
+.input-styling{
+    height: 25px;
+    width: 250px;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#denied {
+    height: 325px;
+    width: 350px;
+    background-color: darkgreen;
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 25px;
+    text-align: center;
+}
+
+#approved {
+    height: 325px;
+    width: 350px;
+    background-color: darkgreen;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas: 
+    ". Val1"
+    ". Val2"
+    ". Val3"
+    ". Val4"
+    ". refresh";
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 25px;
+}
+
+#refresh {
+    grid-area: refresh;
+    height: 25px;
+    width: auto
+
+.loan_denied{
+    display:block;
+    margin-left: auto;
+    margin-right: auto:
+}
