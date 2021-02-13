@@ -59,8 +59,9 @@ def form_post():
 def dataset():
        col = mongo.db.file_accepted
        c = col.find({'Loan_Amount' : 3600.0}, {'_id' : False})
-       trip = [i for i in c]
-       return render_template ('CreditScore.html', data = {'trip': trip}) # jsonify({'result' : output})
+       data = [i for i in c]
+       #return render_template ('CreditScore.html', data = {'trip': trip}) # jsonify({'result' : output})
+       return {'data': data}
 
 # 
 
